@@ -1,0 +1,82 @@
+{
+  "ngDeps": {
+    "1": "better_issue",
+    "3": [
+      {
+        "1": "package:angular2/angular2.dart",
+        "5": false
+      },
+      {
+        "1": "package:angular2/bootstrap_static.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent",
+        "4": [
+          {
+            "1": "Component",
+            "3": [
+              {
+                "1": "selector",
+                "2": "'my-app'"
+              },
+              {
+                "1": "templateUrl",
+                "2": "'app_component.html'"
+              },
+              {
+                "1": "directives",
+                "2": "const [CORE_DIRECTIVES, FORM_DIRECTIVES]"
+              }
+            ],
+            "4": false,
+            "5": true,
+            "6": true,
+            "7": true,
+            "8": false
+          }
+        ],
+        "8": [
+          {
+            "2": "CORE_DIRECTIVES"
+          },
+          {
+            "2": "FORM_DIRECTIVES"
+          }
+        ]
+      }
+    ],
+    "6": "main.dart"
+  },
+  "AppComponent": {
+    "kind": "type",
+    "value": {
+      "isComponent": true,
+      "dynamicLoadable": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "name": "AppComponent",
+        "moduleUrl": "asset:better_issue/web/main.dart",
+        "isHost": false
+      },
+      "changeDetection": 5,
+      "inputs": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 2,
+        "template": "<div class=\"container\">\n  <h1>Better Issue</h1>\n  <form (ng-submit)=\"onSubmit()\" #hf=\"form\">\n    <div class=\"form-group\">\n      <label for=\"org\">Org/User</label>\n      <input type=\"text\" class=\"form-control\" required [(ng-model)]=\"model.org\" ng-control=\"org\">\n    </div>\n    <div class=\"form-group\">\n      <label for=\"repository\">Repository</label>\n      <input type=\"text\" class=\"form-control\" [(ng-model)]=\"model.repository\" ng-control=\"repository\" >\n    </div>\n    <div class=\"form-group\">\n      <label for=\"title\">Issue title</label>\n      <input type=\"text\" class=\"form-control\" [(ng-model)]=\"model.issueTitle\" ng-control=\"title\" >\n    </div>\n    <div class=\"form-group\">\n      <label for=\"body\">Issue body</label>\n      <textarea class=\"form-control\" [(ng-model)]=\"model.issueBody\" ng-control=\"body\" rows=\"5\"></textarea>\n    </div>\n    <div class=\"form-group\">\n      <label for=\"issueUri\">New Issue URL</label>\n      <a href=\"{{model.issueUri}}\" target=\"_blank\">{{model.issueUri}}</a>\n    </div>\n  </form>\n</div>\n",
+        "templateUrl": "asset:better_issue/web/app_component.html",
+        "styles": [],
+        "styleUrls": [],
+        "ngContentSelectors": []
+      }
+    }
+  }
+}
