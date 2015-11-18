@@ -8,14 +8,14 @@ import 'package:angular2/bootstrap.dart';
     templateUrl: 'app_component.html',
     directives: const [CORE_DIRECTIVES, FORM_DIRECTIVES])
 class AppComponent {
-  final Model model = new Model('dart-lang', 'sdk');
+  final Model model = new Model('kevmoo', 'better_issue');
 }
 
 class Model {
   String org;
   String repository;
-  String issueTitle;
-  String issueBody;
+  String issueTitle = 'Sample title';
+  String issueBody = '# sample body\n\n*with markdown!*';
 
   Model(this.org, this.repository);
 
