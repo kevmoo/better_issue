@@ -1,5 +1,6 @@
 <div class="container">
   <h1>Better Issue</h1>
+  <p class="lead">Fill out some fields. Get a better "New issue..." link to send to users.</p>
   <form (ng-submit)="onSubmit()" #hf="form">
     <div class="form-group">
       <label for="org">Org/User</label>
@@ -18,8 +19,11 @@
       <textarea class="form-control" [(ng-model)]="model.issueBody" ng-control="body" rows="5"></textarea>
     </div>
     <div class="form-group">
-      <label for="issueUri">New Issue URL</label>
-      <p class="text-left">
+      <p>
+        <strong>New Issue URL</strong><br>
+        <em>Validate any markdown in the body by checking the <strong>Preview</strong> tab.</em>
+      </p>
+      <p>
         <a href="{{model.issueUri}}" target="_blank">{{model.issueUri}}</a>
       </p>
     </div>
